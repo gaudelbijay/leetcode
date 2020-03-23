@@ -7,8 +7,8 @@ public:
             if(m.find(nums[i])==m.end())
                 m[target-nums[i]]=i;
             else{
-                result.push_back(m[nums[i]]+1);
-                result.push_back(i+1);
+                result.push_back(m[nums[i]]);
+                result.push_back(i);
             }
         }
         return result;
